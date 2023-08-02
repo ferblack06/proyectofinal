@@ -1,0 +1,94 @@
+@mixin reset{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+   
+}
+
+
+
+@mixin parrafo{
+    p{
+    text-align: justify;
+    color: rgb(49, 47, 48);
+    font-size: 1rem;
+    margin: 0 1%;
+    padding: 1% ;
+   
+
+    }
+     
+}
+
+
+@mixin body{
+    body{
+        height: 200vh;;
+        display: grid;
+        grid-template-rows: 0.25fr repeat(2,1fr) 0.5fr;
+        grid-template-columns:0.1fr repeat(2,1fr) ;
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "main main main"
+        "footer footer footer";
+    }
+}
+@mixin responsive($medida: 480px){
+    @media screen and (max-width: $medida) {
+        @content;
+    }
+}
+
+@mixin responsivetablet($medida: 768px){
+    @media screen and (max-width: $medida) {
+        @content;
+    }
+}
+
+@mixin flexbox {
+      
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            gap: 0;
+        }   
+    
+
+@mixin button{
+    .button{
+        border: none;
+        font-size: 16px;
+        color: white;
+        padding: 8px 16px;
+        background-color: rgb(216, 170, 212);
+        border-radius: 6px;
+        margin: 2px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    
+    .button:hover{
+        background-color: rgb(91, 105, 212);
+    }
+}
+
+@mixin button2{
+        .button2{
+            border: none;
+            font-size: 16px;
+            color: white;
+            padding: 8px 16px;
+            background-color: rgb(64, 95, 234);
+            border-radius: 6px;
+            margin: 2px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .button2:hover{
+            background-color: rgb(155, 51, 211);
+        }
+
+   
+}

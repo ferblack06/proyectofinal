@@ -1,0 +1,356 @@
+@charset "UTF-8";
+/* estilos para páginas hechas con boostrap*/
+/* condicionales para cajitas de colores y cambio de color de sus bordes*/
+.caja3, .caja2, .caja1 {
+  margin: 10px;
+  border-radius: 10px;
+  display: inline-flex;
+  height: 70%;
+  width: 70%;
+}
+
+.caja1 {
+  background-color: rgb(102, 72, 152);
+  background-color: rgb(102, 72, 152);
+  border: 3px solid rgb(46, 215, 207);
+  font-size: 2rem;
+  text-align: center;
+}
+
+.caja2 {
+  background-color: rgb(192, 119, 178);
+  background-color: rgb(192, 119, 178);
+  border: 3px solid rgb(206, 20, 160);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1.5rem;
+  color: bisque;
+  text-align: center;
+}
+
+.caja3 {
+  background-color: rgb(0, 187, 255);
+  background-color: rgb(0, 187, 255);
+  border: 3px solid rgb(20, 7, 103);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+  color: rgb(43, 19, 106);
+  text-align: center;
+}
+
+.logo {
+  width: 30%;
+}
+
+.center {
+  text-align: center;
+}
+
+.text {
+  color: rgb(49, 47, 48);
+  margin: 15px 15px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.text2 {
+  color: rgb(79, 9, 141);
+  margin: 15px 15px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.cardcolor {
+  background-color: rgb(190, 186, 186);
+}
+
+/* estilos para página hecha con grids*/
+.L {
+  /* reset de la página*/
+  /* estilo de párrafo*/
+  /* estilo de botones*/
+  /* responsive para mobile y tablet para páginas con grids*/
+  /* clase para una imagen*/
+  /* clase para un tipo de texto*/
+}
+.L header {
+  background-color: whitesmoke;
+  height: 10%;
+  font-size: 1.5rem;
+  align-items: flex-end;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 0.25fr 1fr;
+  grid-template-areas: "logo navv";
+}
+.L header nav {
+  background-color: whitesmoke;
+  grid-area: navv;
+  padding: 4%;
+}
+.L header nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.L header nav ul li {
+  list-style-type: none;
+}
+.L header nav ul li a {
+  text-decoration: none;
+  text-align: center;
+  color: rgb(51, 16, 86);
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  margin: 0 1rem;
+}
+.L main {
+  background-color: rgb(151, 220, 232);
+  grid-area: main;
+  font-family: "Montserrat", sans-serif;
+  margin: 0 0;
+  display: grid;
+  grid-template-rows: repeat(2, 0.5fr);
+  grid-template-columns: 1fr 0.6fr;
+  grid-template-areas: "section1 aside" "section2 aside";
+}
+.L section h1 {
+  color: rgb(106, 43, 161);
+  padding: 3%;
+  text-align: center;
+}
+.L .section1 {
+  background-image: linear-gradient(rgb(193, 135, 229), rgb(219, 149, 198));
+  border: 2px solid rgb(119, 8, 136);
+  border-radius: 20px;
+  margin: 3%;
+  padding: 3%;
+}
+.L .section1 #video1, .L .section1 .imgxx {
+  padding: 2% 15%;
+}
+.L .section2 {
+  background-image: linear-gradient(rgb(193, 135, 229), rgb(219, 149, 198));
+  border: 2px solid rgb(119, 8, 136);
+  border-radius: 20px;
+  margin: 3%;
+  padding: 3%;
+}
+.L aside {
+  background-image: linear-gradient(rgb(133, 227, 169), rgb(165, 120, 214));
+  border: 2px solid rgb(119, 8, 136);
+  border-radius: 20px;
+  grid-area: aside;
+  text-align: center;
+  margin: 5% 5%;
+  padding: 5%;
+}
+.L aside h1 {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  color: rgb(60, 7, 98);
+}
+.L #footer1 {
+  background-color: gray;
+  grid-area: footer1;
+}
+.L #footer1 img {
+  width: 60%;
+}
+.L #footer2 {
+  background-color: gray;
+  text-align: justify;
+  grid-area: footer2;
+}
+.L footer {
+  background-color: gray;
+  grid-area: footer;
+  font-family: "Montserrat", sans-serif;
+  padding: 1%;
+  display: grid;
+  grid-template-rows: 0.05fr repeat(2, 1fr) 0.05fr;
+  grid-template-columns: repeat(3, 1fr) 0.2fr;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas: ". . . ." "footer1 . footer2 ." "footer1 . footer2 ." ". . . .";
+}
+.L footer h4 {
+  margin-bottom: 5px;
+  color: rgb(237, 230, 240);
+  font-size: 1.5rem;
+}
+.L #img00 {
+  width: 40%;
+}
+.L .img {
+  width: 90%;
+}
+.L .logo2 {
+  margin: 20%;
+}
+.L .contacto {
+  border: 2px solid rgb(74, 10, 108);
+  margin-bottom: 5px;
+  border-radius: 3px;
+  font-size: 15px;
+  padding: 5px 5px;
+  width: 100%;
+  outline: 0px;
+}
+.L * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.L p {
+  text-align: justify;
+  color: rgb(49, 47, 48);
+  font-size: 1rem;
+  margin: 0 1%;
+  padding: 1%;
+}
+.L .button {
+  border: none;
+  font-size: 16px;
+  color: white;
+  padding: 8px 16px;
+  background-color: rgb(216, 170, 212);
+  border-radius: 6px;
+  margin: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.L .button:hover {
+  background-color: rgb(91, 105, 212);
+}
+.L .button2 {
+  border: none;
+  font-size: 16px;
+  color: white;
+  padding: 8px 16px;
+  background-color: rgb(64, 95, 234);
+  border-radius: 6px;
+  margin: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.L .button2:hover {
+  background-color: rgb(155, 51, 211);
+}
+@media screen and (max-width: 480px) {
+  .L main {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .L nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .L main .videox {
+    width: 100%;
+    height: 50%;
+  }
+  .L main .imgxx {
+    width: 100%;
+    height: 100%;
+  }
+  .L main .imgxxx {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .L Header {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .L main {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .L Header {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .L nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .L main .imgxx {
+    width: 100%;
+    height: 100%;
+  }
+  .L main .imgxxx {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .L Footer {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .L Footer {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 0;
+  }
+}
+.L body {
+  background-color: rgb(227, 182, 235);
+}
+.L body body {
+  height: 200vh;
+  display: grid;
+  grid-template-rows: 0.25fr repeat(2, 1fr) 0.5fr;
+  grid-template-columns: 0.1fr repeat(2, 1fr);
+  grid-template-areas: "header header header" "main main main" "main main main" "footer footer footer";
+}
+.L #logo img {
+  width: 40%;
+}
+.L .imgxxx {
+  width: 90%;
+}
+.L .text {
+  color: rgb(49, 47, 48);
+  margin: 30px 30px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.L .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20%;
+}
+
+/*# sourceMappingURL=style.css.map */

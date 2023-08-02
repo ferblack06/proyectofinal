@@ -1,0 +1,71 @@
+/* condicionales para cajitas de colores y cambio de color de sus bordes*/
+
+$alto: 70%;
+$ancho: 70%;
+$morado:rgb(145, 34, 200);
+
+
+%buttom{
+    margin: 10px;
+    border-radius: 10px;
+    display:inline-flex;
+    height: $alto;
+    width:$ancho;
+}
+
+@mixin condicional($color){
+    background-color: $color;
+
+    @if $color == rgb(102, 72, 152){
+        border: 3px solid rgb(46, 215, 207);
+        font-size: 2rem;
+        text-align: center;
+
+        
+    }
+
+    @else if $color == rgb(192, 119, 178) {
+        border: 3px solid rgb(206, 20, 160);
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 1.5rem;
+        color: bisque;
+        text-align: center;
+
+    }
+
+    @else if $color == rgb(0, 187, 255) {
+        border: 3px solid rgb(20, 7, 103);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 1.5rem;
+        color: rgb(43, 19, 106);
+        text-align: center
+
+    }
+    
+}
+
+.caja1{
+    @extend %buttom;
+    background-color:  rgb(102, 72, 152);
+    @include condicional( rgb(102, 72, 152))
+}
+
+.caja2{
+    @extend %buttom;
+    background-color: rgb(192, 119, 178);
+    @include condicional( rgb(192, 119, 178))
+}
+
+.caja3{
+    @extend %buttom;
+    background-color: rgb(0, 187, 255);
+    @include condicional(  rgb(0, 187, 255))
+}
+
+
+
+
+
+
+
+

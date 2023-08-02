@@ -1,0 +1,117 @@
+
+
+main{
+    background-color: rgb(151, 220, 232);
+    grid-area: main;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 0;
+    display: grid;
+    grid-template-rows: repeat(2,0.5fr);
+    grid-template-columns: 1fr 0.6fr;
+    grid-template-areas: 
+    "section1 aside"
+    "section2 aside"; 
+
+}
+
+ 
+
+    section{
+        h1{
+            color: rgb(106, 43, 161);
+            padding: 3%;
+            text-align: center;
+        }
+
+        
+
+        
+
+        
+    } 
+
+
+
+    .section1{
+        background-image: linear-gradient(rgb(193, 135, 229),rgb(219, 149, 198));
+        border: 2px solid rgb(119, 8, 136);
+        border-radius: 20px;
+        margin: 3%;
+        padding: 3%;
+
+
+
+
+        #video1{
+         
+            padding: 2% 15%;
+            
+        }
+
+        .imgxx{
+           
+         
+            @extend #video1
+        }
+
+
+    }
+
+    .section2{
+        background-image: linear-gradient(rgb(193, 135, 229),rgb(219, 149, 198));
+        border: 2px solid rgb(119, 8, 136);
+        border-radius: 20px;
+        margin: 3%;
+        padding: 3%;
+
+    }
+
+
+
+    
+
+    aside{
+        background-image: linear-gradient(rgb(133, 227, 169),rgb(165, 120, 214));
+        border: 2px solid rgb(119, 8, 136);
+        border-radius: 20px;
+        grid-area: aside;
+        text-align: center;
+        margin: 5% 5%;
+        padding: 5%;
+
+         h1{
+            margin-top: 35px;
+            margin-bottom: 35px;
+            color: rgb(60, 7, 98);
+         }
+
+    }
+
+
+
+    
+
+    
+      
+       
+    
+
+     
+
+        
+        
+
+
+    
+
+   
+
+
+
+
+
+
+
+
+
+

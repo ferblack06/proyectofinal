@@ -1,0 +1,40 @@
+#footer1{
+    background-color:gray;
+    grid-area: footer1;
+
+}
+
+#footer1 img{
+    width: 60%;    
+   
+}
+
+#footer2{
+    background-color: gray;
+    text-align: justify;
+    grid-area: footer2;
+}
+
+footer{
+    background-color: gray;
+    grid-area: footer;
+    font-family: 'Montserrat', sans-serif;
+    padding: 1%;
+    display: grid;
+    grid-template-rows: 0.05fr repeat(2,1fr) 0.05fr;
+    grid-template-columns: repeat(3, 1fr) 0.20fr;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: 
+    ". . . ."
+    "footer1 . footer2 ."
+    "footer1 . footer2 ."
+    ". . . .";
+
+    h4{
+        margin-bottom: 5px;
+        color: rgb(237, 230, 240);
+        font-size: 1.5rem;
+    }
+
+}
